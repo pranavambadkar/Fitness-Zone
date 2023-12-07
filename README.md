@@ -2,7 +2,24 @@
 
 Fitness Zone is a dynamic and user-friendly web application developed with React.js, designed to help users achieve their fitness goals. 
 
-## Available Scripts
+Key Features:
+1) User-friendly Interface
+2) Social Integration
+3) Community Features
+4) Feedback and analytics
+5) Mutliple Fitness Programs
+6) Customizable Workouts
+
+Tech Stack:
+1) React JS
+2) JavaScript
+3) CSS
+4) Cloudflare / Vercel
+
+## Live Demo
+Check out the live demo: https://fitnessszone.pages.dev/
+
+## Project Scripts
 
 In the project directory, you can run:
 
