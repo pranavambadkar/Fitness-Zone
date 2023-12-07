@@ -1,0 +1,136 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.left-t{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    color: var(--orange);  
+    font-weight: bold;
+}
+
+.left-t>:nth-child(2){
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.left-t>:nth-child(3){
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+}
+
+.left-t>:nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.right-t{
+    flex: 1;
+    position: relative;
+    padding-bottom: 24rem;
+}
+
+.right-t>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+    border-radius: 4px 50px;
+}
+
+.right-t>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.8rem;
+    border-radius: 4px 50px;
+}
+
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    top: 4rem;
+    right: 7rem;
+    background: var(--planCard);
+    border-radius: 4px 50px;
+}
+
+.arrows{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+.arrows>img{
+    width: 1.8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials{
+        flex-direction: column;
+    }
+
+    .left-t>:nth-child(2) {
+        font-size: x-large;
+    }
+
+    .left-t>:nth-child(3) {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    } 
+
+    .left-t>:nth-child(4) {
+        font-size: .9rem;
+        line-height: 1.4rem;
+        text-align: left;
+    }
+
+    .right-t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: .8rem;
+    }
+    
+    .right-t>div{
+        position: relative;
+        display: none;
+    }
+
+    .right-t>img{
+        top: 1;
+        right: 0;
+        position: relative;
+        border-radius: 18px;
+        align-self: center;
+    }
+
+    .right-t>:last-child{
+        display: flex;
+        top: 50px;
+        left: 0; 
+    }
+}

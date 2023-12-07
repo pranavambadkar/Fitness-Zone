@@ -1,0 +1,85 @@
+.Programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.programs-header{
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.program-cards{
+    display: flex;
+    gap: 1rem;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cards);
+    border: 1px solid #94969e;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    justify-content: space-between;
+    border-radius: 18px;
+}
+
+.category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+}
+
+.category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.category>:nth-child(3){
+    font-size: 0.9rem;
+    line-height: 25px; 
+}
+
+.join-now{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.join-now>img{
+    width: 1rem;
+}
+
+.category:hover{
+    background: var(--planCard);
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-header{
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .programs-header>span{
+        font-size: 1.8rem;
+    }
+
+    .program-cards{
+        flex-direction: column;
+    }
+}
